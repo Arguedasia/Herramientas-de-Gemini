@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microcurso: Ecosistema de Herramientas IA de Google</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f7f9;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 25px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+        }
+        h1, h2 {
+            color: #1a73e8;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 10px;
+        }
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+        nav {
+            background-color: #e9f2ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+        }
+        nav h3 {
+            margin-top: 0;
+            color: #1a73e8;
+        }
+        .toc {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 10px;
+        }
+        .toc a {
+            display: block;
+            text-decoration: none;
+            color: #1967d2;
+            background-color: #ffffff;
+            padding: 10px 15px;
+            border-radius: 6px;
+            border: 1px solid #dcdcdc;
+            transition: all 0.2s ease-in-out;
+        }
+        .toc a:hover {
+            background-color: #1a73e8;
+            color: #ffffff;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .function-card {
+            background-color: #fdfdfd;
+            border: 1px solid #e0e0e0;
+            border-left: 5px solid #1a73e8;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            scroll-margin-top: 20px;
+        }
+        .function-card h3 {
+            margin-top: 0;
+            font-size: 1.6em;
+            color: #1967d2;
+        }
+        .function-card .tool-link {
+            display: inline-block;
+            margin-top: 15px;
+            background-color: #1a73e8;
+            color: #ffffff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .recommendation {
+            background-color: #e6f4ea;
+            border: 1px solid #a5d6a7;
+            border-radius: 6px;
+            padding: 15px;
+            margin-top: 15px;
+        }
+        .recommendation strong {
+            color: #2e7d32;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Microcurso: Ecosistema de Herramientas de IA de Google</h1>
+            <p>Esta es una guía didáctica sobre las principales plataformas y herramientas de Inteligencia Artificial que Google ofrece para creadores, desarrolladores y curiosos. ¡Exploremos el futuro de la IA!</p>
+        </header>
+
+        <nav>
+            <h3>Índice de Herramientas (Haz clic para navegar)</h3>
+            <ul class="toc">
+                <li><a href="#ai-studio">Google AI Studio</a></li>
+                <li><a href="#notebook-lm">NotebookLM</a></li>
+                <li><a href="#gemini-api">API de Gemini</a></li>
+                <li><a href="#google-labs">Google Labs</a></li>
+                <li><a href="#vertex-ai">Vertex AI</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="ai-studio" class="function-card">
+                <h3>💻 Google AI Studio</h3>
+                <p><b>¿Qué es?</b><br>
+                Es un "patio de juegos" (playground) basado en la web para desarrolladores. Te permite probar rápidamente los modelos de Gemini, experimentar con diferentes prompts (instrucciones) y ajustar parámetros sin escribir una sola línea de código. Es el punto de partida para cualquier proyecto con Gemini.</p>
+                <p><b>Ideal para:</b> Desarrolladores, diseñadores de prompts, y cualquiera que quiera prototipar una idea con IA rápidamente.</p>
+                <div class="recommendation">
+                    <strong>Recomendación didáctica:</strong> Empieza aquí. Antes de programar nada, usa AI Studio para descubrir qué tipo de prompt te da el resultado que buscas. Cuando estés satisfecho, puedes obtener directamente el código (Python, JS, etc.) para integrarlo en tu aplicación.
+                </div>
+                <a href="https://aistudio.google.com/" target="_blank" class="tool-link">Ir a Google AI Studio</a>
+            </section>
+
+            <section id="notebook-lm" class="function-card">
+                <h3>📚 NotebookLM</h3>
+                <p><b>¿Qué es?</b><br>
+                Es un asistente de investigación y escritura personalizado. A diferencia de un chatbot tradicional, NotebookLM se basa única y exclusivamente en los documentos que tú le proporcionas (PDFs, Google Docs, texto). Te ayuda a resumir, analizar, generar ideas y encontrar conexiones en tu propio material.</p>
+                <p><b>Ideal para:</b> Estudiantes, investigadores, analistas, escritores y cualquiera que necesite trabajar intensivamente con información de fuentes específicas.</p>
+                <div class="recommendation">
+                    <strong>Recomendación didáctica:</strong> Úsalo como tu compañero de estudio. Sube los apuntes de una clase o un informe largo y pídele que te genere una guía de estudio, un resumen de los puntos clave o una lista de posibles preguntas de examen.
+                </div>
+                <a href="https://notebooklm.google.com/" target="_blank" class="tool-link">Ir a NotebookLM</a>
+            </section>
+
+            <section id="gemini-api" class="function-card">
+                <h3>🔌 API de Gemini</h3>
+                <p><b>¿Qué es?</b><br>
+                La API (Interfaz de Programación de Aplicaciones) es la puerta de entrada para que los desarrolladores integren el poder de los modelos Gemini directamente en sus propias aplicaciones y servicios. Es lo que permite que un programa "hable" con Gemini.</p>
+                <p><b>Ideal para:</b> Desarrolladores de software y empresas que quieren construir funcionalidades de IA personalizadas.</p>
+                <div class="recommendation">
+                    <strong>Recomendación didáctica:</strong> Una vez que hayas perfeccionado tu idea en AI Studio, el siguiente paso es usar la API. Empieza con los ejemplos de código que provee la documentación oficial para construir una función simple, como un generador de texto o un clasificador de emails.
+                </div>
+                <a href="https://ai.google.dev/" target="_blank" class="tool-link">Documentación de la API</a>
+            </section>
+
+            <section id="google-labs" class="function-card">
+                <h3>🧪 Google Labs</h3>
+                <p><b>¿Qué es?</b><br>
+                Es la incubadora de Google para sus proyectos más nuevos y experimentales. Aquí puedes probar tecnologías en una fase muy temprana y dar tu opinión para ayudar a darles forma. No es una sola herramienta, sino un portal a múltiples experimentos de IA y otras áreas.</p>
+                <p><b>Ideal para:</b> Entusiastas de la tecnología, curiosos y cualquiera que quiera ver un adelanto del futuro.</p>
+                <div class="recommendation">
+                    <strong>Recomendación didáctica:</strong> Visita el sitio periódicamente para descubrir nuevas aplicaciones de la IA. Es una fuente de inspiración genial para ver qué tipo de problemas se están intentando resolver con estas tecnologías.
+                </div>
+                <a href="https://labs.google/" target="_blank" class="tool-link">Explorar Google Labs</a>
+            </section>
+
+            <section id="vertex-ai" class="function-card">
+                <h3>📊 Vertex AI</h3>
+                <p><b>¿Qué es?</b><br>
+                Es la plataforma de nivel empresarial de Google Cloud para construir, desplegar y escalar modelos de Machine Learning (ML). Mientras que AI Studio es para prototipar, Vertex AI es para llevar esos modelos a producción de forma robusta, segura y escalable.</p>
+                <p><b>Ideal para:</b> Empresas, científicos de datos e ingenieros de ML que necesitan gestionar todo el ciclo de vida de un proyecto de IA a gran escala.</p>
+                <div class="recommendation">
+                    <strong>Recomendación didáctica:</strong> Si estás aprendiendo sobre IA, piensa en Vertex AI como el nivel "profesional". Explora su documentación para entender los conceptos de MLOps (Operaciones de Machine Learning), como el monitoreo de modelos o el versionado de datos, que son cruciales en el mundo real.
+                </div>
+                <a href="https://cloud.google.com/vertex-ai" target="_blank" class="tool-link">Descubrir Vertex AI</a>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>Creado por Gemini para desmitificar el ecosistema de IA de Google.</p>
+        </footer>
+    </div>
+</body>
+</html>
